@@ -1,0 +1,17 @@
+.selected {
+  text-decoration: line-through;
+}
+.no-selected {
+}
+.high-score{
+  color: green;
+  font-weight: bold;
+}
+.medium-score{
+  color: orange;
+  font-weight: bold;
+}
+.low-score{
+  color: red;
+  font-weight: bold;
+}

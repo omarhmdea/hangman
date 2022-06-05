@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+window.onload = draw; // Execute draw function when DOM is ready
+function draw() {
+        // Assign our canvas element to a variable 
+        var canvas = document.getElementById("canvas1");
+	// Create the HTML5 context object to enable draw methods
+        var ctx = canvas.getContext("2d"); 
+	// Draw Filled Shape 1 (center triangle of logo)
+
+	// Draw Filled Shape 2 (left flap of logo)
+	ctx.lineWidth = 3
+	// Your homework is to Draw Filled Shape 3 here (right flap)
+	// to complete the shape of the WorldOfWebcraft.com logo
+    ctx.beginPath(); //left line
+        ctx.moveTo(50, 270);
+        ctx.lineTo(50, 25);
+		ctx.stroke();
+    ctx.beginPath(); // top line
+        ctx.moveTo(49, 25);
+        ctx.lineTo(175, 25);
+		ctx.stroke();
+  	ctx.beginPath(); // small line 
+        ctx.moveTo(174, 25);
+        ctx.lineTo(175, 70);
+		ctx.stroke();
+    ctx.beginPath(); // circl
+        ctx.arc(175, 90, 20, 0, 2 * Math.PI);
+        ctx.stroke();
+    ctx.beginPath(); // body
+        ctx.moveTo(175, 110);
+        ctx.lineTo(175, 200);
+		ctx.stroke();
+    ctx.beginPath();
+        ctx.moveTo(175, 130);
+        ctx.lineTo(155, 180);
+		ctx.stroke();
+    ctx.beginPath();
+        ctx.moveTo(175, 130);
+        ctx.lineTo(195, 180);
+		ctx.stroke();
+    ctx.beginPath();
+        ctx.moveTo(175, 200);
+        ctx.lineTo(155, 230);
+		ctx.stroke();
+    ctx.beginPath();
+        ctx.moveTo(175, 200);
+        ctx.lineTo(195, 230);
+		ctx.stroke();
+}
+</script>
+</head>
+<body>
+<canvas id="canvas1" width="400" height="300"></canvas>
+</body>  
+</html>
